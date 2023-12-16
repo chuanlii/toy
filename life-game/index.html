@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>生命游戏</title>
+    </head>
+    <body>
+        <div id="life-args">
+            <div class="title">
+                <h1>生命游戏</h1>
+            </div>
+
+            <div>
+                <input type="number" id="frequency" value="1" max="10" min="1" />
+                <label for="frequency">频率</label>
+            </div>
+            <div>
+                <input type="number" id="density" value="10" max="100" min="1" />
+                <label for="density">密度</label>
+            </div>
+            <div>
+                <button id="start" onclick="start_life()">开始</button>
+                <button id="stop" onclick="stop_life()">停止</button>
+                <button id="clear" onclick="clear_life()">清除</button>
+            </div>
+        </div>
+        <div>
+            <canvas id="life-canvas" width="500" height="500"></canvas>
+        </div>
+    </body>
+    <script src="life.js"></script>
+</html>
